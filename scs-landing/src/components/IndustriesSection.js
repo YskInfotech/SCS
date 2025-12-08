@@ -19,7 +19,7 @@ const industries = [
 
 const IndustriesSection = () => {
   return (
-    <section className="industries-section py-5">
+    <section className="industries-section py-5" id="source">
       <Container>
         <h2 className="section-title mb-4 fw-bold text-start">
           Industries We Serve

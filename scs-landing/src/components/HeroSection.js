@@ -7,7 +7,7 @@ import img3 from "../assets/slide3.png";
 
 const HeroSection = () => {
   return (
-    <section className="hero-section">
+    <section className="hero-section" id="home">
       <Carousel fade interval={1000} controls={false} indicators={false}>
         
         {/* 1️⃣ First Slide */}

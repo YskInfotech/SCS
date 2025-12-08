@@ -65,13 +65,13 @@ const servicesData = [
 
 const OurServices = () => {
   return (
-    <div className="services-section container py-5">
+    <div className="services-section container py-2" id="services">
       <h2 className="fw-bold mb-4 text-dark">Our Services</h2>
       <div className="row g-4">
         {servicesData.map((service, index) => (
           <div className="col-md-6" key={index}>
-            <div className="service-card d-flex justify-content-between align-items-center shadow-sm p-4">
-              <div className="service-text pe-3">
+            <div className="service-card d-flex justify-content-between align-items-center shadow-sm p-0">
+              <div className="service-text p-3">
                 <h5 className="fw-semibold service-title">{service.title}</h5>
                 <p className="service-description mb-0">{service.description}</p>
               </div>

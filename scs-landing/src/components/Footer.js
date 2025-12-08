@@ -39,9 +39,9 @@ const Footer = () => {
 
         {/* Contact */}
         <div className="footer-contact" style={{marginBottom:"210px"}}>
-          <p><strong>Email:</strong> info@sricharan.com</p>
+          <p><strong>Email:</strong> info@sricharansolutions.com</p>
           <p><strong>Phone:</strong> +91 123456789</p>
-          <p><strong>Website:</strong> www.sricharan.com</p>
+          <p><strong>Website:</strong> www.sricharansolutions.com</p>
         </div>
       </div>
     </footer>

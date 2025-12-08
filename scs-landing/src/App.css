@@ -1,3 +1,4 @@
+
 /* header section */
 
 .nav-custom-btn {
@@ -6,6 +7,23 @@
   color: #fff !important;               
   font-weight: 600;
   transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#missionandvision .row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  padding-top: 2cm;
+}
+
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: var(--bs-navbar-nav-link-padding-x);
+        padding-left: var(--bs-navbar-nav-link-padding-x);
+        font-size: larger;
+    }
 }
 
 .nav-custom-btn:hover {
@@ -408,7 +426,7 @@ p {
 .outer-info-card {
   background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   position: relative;
 }
@@ -430,8 +448,8 @@ p {
 
 /* Icon/Image Styling */
 .side-icon {
-  width: 60px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
   object-fit: contain;
 }
 
@@ -473,22 +491,27 @@ h2 {
   padding: 10px 10px;
 }
 
+
+.text-primary-about{
+  color: #0c2d57 !important;
+}
+
 .service-title {
-  color: #1b4ea0;
-  font-size: 1.05rem;
+  color: #1C3B69;
+  font-size: large;
   font-weight: 600;
   margin-bottom: 8px;
 }
 
 .service-description {
   color: #6c757d;
-  font-size: 0.9rem;
+  font-size: 15px;
   line-height: 1.6;
 }
 
 /* ✅ Right-side image — fills height, no gaps, only right corners rounded */
 .service-image-wrapper {
-  width: 100px; /* adjust width as needed */
+   width: 143px; 
   height: 100%;
   overflow: hidden;
   flex-shrink: 0;
@@ -666,7 +689,7 @@ background-color: #FAF5F5;
 .feature-line {
   width: 250px;
   height: 2px;
-  background-color: #000;
+  background-color: #b1a9a9;
   margin: 0 10px;
 }
 
