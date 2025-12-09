@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from './components/LandingPage/LandingPage';
 import DashboardLayout from './components/AdminDashBoard/DashboardLayout';
@@ -11,8 +12,7 @@ import DashboardLayout from './components/AdminDashBoard/DashboardLayout';
 function App() {
   return (
     <div className="App">
-     
-     
+
     
 
  <Router>
@@ -25,6 +25,9 @@ function App() {
 
       </Routes>
     </Router>
+
+
+    
 
     </div>
   );
