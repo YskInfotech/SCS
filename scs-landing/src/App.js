@@ -8,6 +8,8 @@ import IndustriesSection from './components/IndustriesSection';
 import WhyChooseUs from './components/WhyChooseUs';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
+import Login from './components/adminlogin/Login';
+import Onboardlanding from './components/Onboarding/Onboardlanding';
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
     <WhyChooseUs/>
     <Testimonials/>
     <Footer/>
+    <Login/>
+    <Onboardlanding/>
     </div>
   );
 }
