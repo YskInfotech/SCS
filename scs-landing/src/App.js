@@ -7,12 +7,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from './components/LandingPage/LandingPage';
 import DashboardLayout from './components/AdminDashBoard/DashboardLayout';
 import Login from './components/adminlogin/Login';
-
-
-
-
-import LandingPage from "./components/LandingPage/LandingPage";
-import DashboardLayout from "./components/AdminDashBoard/DashboardLayout";
 import Sources from "./components/Sources";
 
 
