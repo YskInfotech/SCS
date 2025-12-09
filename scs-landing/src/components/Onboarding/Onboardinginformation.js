@@ -10,22 +10,22 @@ function Onboardinginformation() {
 
     const handleviewpersonal=()=>{
          setActive("personal");
-        navigate("/dashboard/Onboardinglanding/")
+        navigate("/dashboard/Onboardlanding/")
     }
 
     const handleviewdocuments=()=>{
         setActive("documents")
-        navigate("/dashboard/Onboardinglanding/Documentsid")
+        navigate("/dashboard/Onboardlanding/Onboarddocuments")
     }
 
     const handleviewnominee=()=>{
         setActive("nominee")
-        navigate("/dashboard/Onboardinglanding/Nomineebankdetails")
+        navigate("/dashboard/Onboardlanding/Onboardnomine")
     }
 
     const handleviewjoining=()=>{
         setActive("joining")
-        navigate("/dashboard/Onboardinglanding/JoiningDoc")
+        navigate("/dashboard/Onboardlanding/Onboardjoining")
     }
     return (
         <>

@@ -1,5 +1,4 @@
 import React from "react";
-import AdminNavbar from "./AdminNavbar";
 import Sidebar from "./Sidebar";
 import DashboardRoutes from "./DashboardRoutes";
 import "../../Styles/DashboardLayout.css";
@@ -9,7 +8,6 @@ import "../../Styles/DashboardLayout.css";
 function DashboardLayout() {
   return (
     <div className="admin-layout">
-      <AdminNavbar/>
       <Sidebar/>
       <main className="admin-main-content">
         <DashboardRoutes/>

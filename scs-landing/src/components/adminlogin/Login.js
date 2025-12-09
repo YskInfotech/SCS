@@ -12,12 +12,11 @@ import "react-toastify/dist/ReactToastify.css";
 
 function Login (){
 
-
+const navigate = useNavigate()
 
 const [username,setUsername]=useState("")
  const [password, setPassword] = useState("");
     const [userinput, setUserinput] = useState("")
-    // eslint-disable-next-line
     const [captch, setCaptch] = useState({ a: 5, b: 5 })
 
     const dummymail = "scs@gmail.com";
@@ -34,11 +33,16 @@ const [username,setUsername]=useState("")
 
         if (username === dummymail && password === dummypass) {
             toast.success("Login successful! Welcome to Admin dashboard");
+            setTimeout(() => navigate("/dashboard"), 1000);
            
         } else {
             toast.error("Invalid Email or Password!");
-        }
+        }   
     };
+
+    const handlehome =()=>{
+        navigate("/")
+    }
 
     return(
         <>
@@ -46,7 +50,7 @@ const [username,setUsername]=useState("")
             <div className="bg-cont-login" >
 
                 <div className="login-card">
-                    <div className="d-flex justify-content-end">
+                    <div className="d-flex justify-content-end" onClick={handlehome}>
                         <IoIosCloseCircle className="login-icon" />
                     </div>
 

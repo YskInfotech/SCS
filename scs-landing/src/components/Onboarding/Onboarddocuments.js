@@ -48,10 +48,10 @@ function Onboarddocuments() {
       </div>
       <div className="d-flex d-flex justify-content-between">
         <div>
-          <button className="bc-button" onClick={() => { navigate("/dashboard/Onboardinglanding/") }}><MdKeyboardDoubleArrowLeft className="bc-ic" />Back</button>
+          <button className="bc-button" onClick={() => { navigate("/dashboard/Onboardlanding/") }}><MdKeyboardDoubleArrowLeft className="bc-ic" />Back</button>
         </div>
         <div>
-          <button className="next-button" onClick={() => { navigate("/dashboard/Onboardinglanding/Nomineebankdetails") }}>Next<MdOutlineDoubleArrow /></button>
+          <button className="next-button" onClick={() => { navigate("/dashboard/Onboardlanding/Onboardnomine") }}>Next<MdOutlineDoubleArrow /></button>
         </div>
       </div>
 

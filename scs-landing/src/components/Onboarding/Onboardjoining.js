@@ -63,7 +63,7 @@ const Onboardjoining = () => {
         </tbody>
       </table>
 
-        <button className="bc-button mt-3" onClick={() => { navigate("/dashboard/Onboardinglanding/Nomineebankdetails") }}><MdKeyboardDoubleArrowLeft className="bc-ic" />Back</button>
+        <button className="bc-button mt-3" onClick={() => { navigate("/dashboard/Onboardlanding/Onboardnomine") }}><MdKeyboardDoubleArrowLeft className="bc-ic" />Back</button>
 
     </div>
   );

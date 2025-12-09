@@ -10,9 +10,9 @@ function Onboardpersonview(){
         <>
          <Routes>   
         <Route path="/" element={<Onboardpersonalinfo/>}/> 
-       <Route path="/Documentsid" element={<Onboarddocuments/>}/>
-       <Route path="/Nomineebankdetails" element={<Onboardnomine/>}/>
-       <Route path="/JoiningDoc" element={<Onboardjoining/>}/>
+       <Route path="/Onboarddocuments" element={<Onboarddocuments/>}/>
+       <Route path="/Onboardnomine" element={<Onboardnomine/>}/>
+       <Route path="/Onboardjoining" element={<Onboardjoining/>}/>
         </Routes>
         </>
     )

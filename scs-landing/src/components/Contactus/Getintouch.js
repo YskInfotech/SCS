@@ -14,30 +14,40 @@ function Getintouch() {
       name: "Rahul Sharma",
       mail: "rahul@gmail.com",
       phone: "9988776655",
+      CompanyName:"YSK infotech",
+      selectrecrutment:"Pay Roll",
       msg: "I'm interested in applying for the Software Developer role at SVV"
     },
     {
       name: "Rajesh gupta",
       mail: "rajesh@gmail.com",
       phone: "9988776655",
+      Company:"YSK infotech",
+      selectrecrutment:"Pay Roll",
       msg: "I would like to join your HR team. Kindly review my profile.what are svv"
     },
     {
       name: "surya",
       mail: "surya@gmail.com",
       phone: "9988776655",
+      Company:"YSK infotech",
+      selectrecrutment:"Pay Roll",
       msg: "I’m applying for the Technical Support Engineer role.Let me know..."
     },
     {
       name: "gupta",
       mail: "gupta@gmail.com",
       phone: "9988776655",
+      Company:"YSK infotech",
+      selectrecrutment:"Pay Roll",
       msg: " Please let me know if my portfolio link can be shared for review.Need...."
     },
     {
       name: "mani",
       mail: "mani@gmail.com",
       phone: "9988776655",
+      Company:"YSK infotech",
+      selectrecrutment:"Pay Roll",
       msg: "Looking for opportunities in your Digital Marketing team. Eager to....."
     },
   ]
