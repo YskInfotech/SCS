@@ -1,9 +1,13 @@
   import React from "react";
   import { Navbar, Nav, Container, Button } from "react-bootstrap";
+  import { NavLink } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
   import logo from "../assets/logo.png";
-  import "../App.css"; // import CSS for styling
+  import "../App.css"; 
+
 
   const Header = () => {
+    const navigate = useNavigate();
     const sections = [
       {
         title: "IT Staffing",
@@ -82,10 +86,12 @@
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
             <Nav className="align-items-lg-center fw-bold">
-              <Nav.Link href="#home" className="mx-2">
+              <Nav.Link href="#home" className="mx-2"
+              onClick={() => navigate("/")} >
                 Home
               </Nav.Link>
-              <Nav.Link href="#about" className="mx-2">
+              <Nav.Link href="#about" className="mx-2"
+              onClick={() => navigate("/")} >
                 About
               </Nav.Link>
 
@@ -96,8 +102,8 @@
                     className="nav-link dropdown-toggle"
                     id="servicesDropdown"
                     role="button"
-                  
                     aria-expanded="false"
+                    onClick={() => navigate("/")} 
                   >
                     Services
                   </a>
@@ -125,42 +131,48 @@
                 </div>
 
               {/* Other Nav Items */}
-              <div className="nav-item dropdown mx-2">
-                <a
-                  href="#source"
-                  className="nav-link dropdown-toggle"
-                  id="sourcesDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Sources
-                </a>
-                <ul className="dropdown-menu" aria-labelledby="sourcesDropdown">
-                  <li>
-                    <a className="dropdown-item" href="#job-fairs">
-                      Job Fairs
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#csr-training">
-                      CSR Training Programme
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#colleges">
-                      Associated 100+ Colleges
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#district">
-                      Working in District Level
-                    </a>
-                  </li>
-                </ul>
-              </div>
+               <div className="nav-item dropdown mx-2">
+              <a
+                className="nav-link dropdown-toggle"
+                id="sourcesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                onClick={() => navigate("/sources")} 
+              >
+                Sources
+              </a>
 
-              <Nav.Link href="#contact" className="mx-2">
+              <ul className="dropdown-menu" aria-labelledby="sourcesDropdown">
+                <li>
+                  <a className="dropdown-item" href="#job-fairs"
+                  onClick={() => navigate("/sources")} >
+                    Job Fairs
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#csr-training"
+                  onClick={() => navigate("/sources")} >
+                    CSR Training Programme
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#colleges"
+                  onClick={() => navigate("/sources")} >
+                    Associated 100+ Colleges
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#district" 
+                  onClick={() => navigate("/sources")} >
+                    Working in District Level
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+              <Nav.Link href="#contact" className="mx-2"
+               onClick={() => navigate("/")}>
                 Contact Us
               </Nav.Link>
               <Button variant="success" className="ms-3 px-3 py-1 nav-custom-btn">
