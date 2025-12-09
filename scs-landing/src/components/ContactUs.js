@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/Styles/contactus.css";
+import "../Styles/contactus.css"
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 

@@ -1,0 +1,95 @@
+.scsd-dashboard-main {
+  background: #f7f5f5;
+  padding: 35px;
+  min-height: 100vh;
+  margin-top:0cm;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.scsd-card-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 2cm;
+  width: 100%;
+  
+}
+
+.scsd-big-card {
+  width: 300px;
+  background: #164B7B;
+  padding: 25px;
+  border-radius: 12px;
+  color: white;
+  height: fit-content;
+  text-align: center;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.scsd-big-card:hover {
+  box-shadow: 0 0 15px rgba(11, 43, 54, 0.5);
+}
+
+.scsd-big-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.scsd-card-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.scsd-status-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.scsd-status-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.scsd-status-item {
+  width: 70px;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+}
+
+.scsd-status-item h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.scsd-status-label {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Color variants */
+.scsd-status-item.scsd-green {
+  background: #009C3B;
+}
+
+.scsd-status-item.scsd-orange {
+  background: #E2A60A;
+}
+
+.scsd-status-item.scsd-yellow {
+  background: #e2a60a;
+}
+
+.count-num {
+  width: 50px;
+  font-size: larger;
+  font-weight: 500;
+}

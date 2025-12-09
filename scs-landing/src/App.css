@@ -511,7 +511,7 @@ h2 {
 
 /* ✅ Right-side image — fills height, no gaps, only right corners rounded */
 .service-image-wrapper {
-   width: 143px; 
+   width: 100px; 
   height: 100%;
   overflow: hidden;
   flex-shrink: 0;
