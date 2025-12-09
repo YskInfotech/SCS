@@ -7,6 +7,22 @@
   font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
 }
+.source-hero-overlay {
+  position: absolute;
+  inset: 0;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;     /* RIGHT SIDE */
+  text-align: right;         /* align heading and text to right */
+  color: #ffffff;
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.6)
+  );
+}
 
 /* ---------- HERO / BANNER ---------- */
 
