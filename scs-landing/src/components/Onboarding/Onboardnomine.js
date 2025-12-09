@@ -268,10 +268,10 @@ function Onboardnomine() {
 </div>
       <div className=" d-flex justify-content-between">
               <div>
-                <button className="bc-button" onClick={() => { navigate("/dashboard/Onboardinglanding/Documentsid") }}><MdKeyboardDoubleArrowLeft className="bc-ic" />Back</button>
+                <button className="bc-button" onClick={() => { navigate("/dashboard/Onboardlanding/Onboarddocuments") }}><MdKeyboardDoubleArrowLeft className="bc-ic" />Back</button>
               </div>
               <div>
-                <button className="next-button" onClick={() => { navigate("/dashboard/Onboardinglanding/JoiningDoc") }}>Next<MdOutlineDoubleArrow /></button>
+                <button className="next-button" onClick={() => { navigate("/dashboard/Onboardlanding/Onboardjoining") }}>Next<MdOutlineDoubleArrow /></button>
               </div>
             </div> 
       

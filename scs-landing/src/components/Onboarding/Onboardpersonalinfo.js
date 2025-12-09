@@ -126,7 +126,7 @@ function  Onboardpersonalinfo() {
           </label>
         </div>
     <div className="d-flex justify-content-end">
-     <button className="next-button" onClick={()=>{navigate("/dashboard/Onboardinglanding/Documentsid")}}>Next<MdOutlineDoubleArrow /></button>
+     <button className="next-button" onClick={()=>{navigate("/dashboard/Onboardlanding/Onboarddocuments")}}>Next<MdOutlineDoubleArrow /></button>
      </div>
     </div>
   );

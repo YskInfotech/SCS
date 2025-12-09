@@ -2,7 +2,6 @@ import React from "react";
 import { FaUserTie, FaUserGraduate } from "react-icons/fa";
 import { BiMessageDetail } from "react-icons/bi";
 import { IoDocumentTextOutline } from "react-icons/io5";
-import onboardingimg from "../../assets/onboardingimgdash.png"
 import "../../Styles/DashboardHome.css";
 
 function HrDashboardHome() {

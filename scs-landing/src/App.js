@@ -4,6 +4,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from './components/LandingPage/LandingPage';
 import DashboardLayout from './components/AdminDashBoard/DashboardLayout';
+import Login from './components/adminlogin/Login';
 
 
 
@@ -19,6 +20,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<LandingPage/>} />
+        <Route path='/login' element={<Login/>}/>
         <Route path="/dashboard*" element={<DashboardLayout/>} />
        
 
