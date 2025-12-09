@@ -1,9 +1,5 @@
 .bg-cont-login {
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0.808),
-    rgba(9, 143, 226, 0.341)
-  );
+ 
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 20px;
@@ -28,7 +24,7 @@
     width: 400px;
     padding: 20px;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.689);
+    /* background: rgba(255, 255, 255, 0.689); */
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
     border: 1px solid rgba(255, 255, 255, 0.25);
@@ -38,12 +34,13 @@
 
 
 .login-tittle{
-    color:#173963;
+    color:#fff;
     text-align: center;
+    
 }
 
 .human-text-login{
-    color: #173963;
+    color: #fff;
 }
 
 .small-label{
@@ -56,7 +53,8 @@
 }
 
 .login-forget{
-    color: red;
+    color: #f3ec07;
+    font-weight: 400;
    
 }
 
@@ -73,13 +71,36 @@
 .login-input {
   height: 38px;
   border-radius: 8px;
-  border: 1.3px solid #cdd5e0;
-  background: #fafafa;
+
+  /* Glass border */
+  border: 1.3px solid rgba(255, 255, 255, 0.35);
+
+  /* Transparent + glass background */
+  background: rgba(255, 255, 255, 0.18);
+
+  /* Frosted blur */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
   padding-left: 12px;
   font-size: 0.9rem;
   transition: all 0.3s ease;
-  color: black;
+  color:  rgba(255, 255, 255, 0.18); /* white text for glass style */
 }
+
+/* Placeholder style */
+.login-input::placeholder {
+  color: rgba(255, 255, 255, 0.75   );
+}
+.login-input:focus {
+  background: rgba(255, 255, 255, 0.18) !important; /* keep glass */
+  border: 1.3px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.45);
+  outline: none;
+  color: #ffffff;
+}
+
+
 
 .captcha-login{
     width: 100px !important;
@@ -109,8 +130,8 @@
 }
 
 .login-btn1{
-    color: black !important;
-    border: 1px solid black !important;
+    color: #ffff !important;
+    border: 1px solid #ffff !important;
 }
 
 .login-btn1:hover{

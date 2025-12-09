@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import { IoIosCloseCircle } from "react-icons/io";
 import { FcGoogle } from "react-icons/fc";
+import bgimage from "../../assets/loginbanner.png";
 import { IoReloadCircle } from "react-icons/io5";
 
 import { ToastContainer,toast } from "react-toastify";
@@ -47,7 +48,7 @@ const [username,setUsername]=useState("")
     return(
         <>
             <ToastContainer />
-            <div className="bg-cont-login" >
+            <div className="bg-cont-login"  style={{ backgroundImage: `url(${bgimage})` }}>
 
                 <div className="login-card">
                     <div className="d-flex justify-content-end" onClick={handlehome}>
