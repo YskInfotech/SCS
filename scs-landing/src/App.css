@@ -519,7 +519,7 @@ h2 {
 }
 
 .service-image {
-  width: 100%;
+  width: 120%;
   height: 150%;
   object-fit: cover;
   display: block;
