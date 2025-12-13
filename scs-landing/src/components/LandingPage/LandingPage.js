@@ -25,7 +25,7 @@ function LandingPage() {
     <WhyChooseUs/>
     <Testimonials/>
     <ContactUs/>
-    <Footer/>
+    <Footer/> 
 
 
         </>

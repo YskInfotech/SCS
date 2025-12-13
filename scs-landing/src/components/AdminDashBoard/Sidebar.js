@@ -6,7 +6,7 @@ import { RiContactsFill } from "react-icons/ri";
 import { IoMdSettings } from "react-icons/io";
 import { FaSignOutAlt } from "react-icons/fa";
 import {
-  FaHome, FaLock, FaUser
+  FaHome, FaLock, FaUser,FaBars,
 
 } from "react-icons/fa";
 import profilePic from "../../assets/HRlead.jpg";
@@ -45,13 +45,29 @@ function Sidebar() {
   return (
     <>
     <div className={`admin-sidebar ${isCollapsed ? "collapsed" : ""}`}>
+    <div className="admin-sidebar-header">
+        
+        <button
+          className="admin-toggle-btn"
+          onClick={() => setIsCollapsed(!isCollapsed)}
+        >
+          <FaBars />
+        </button>
+
+        <NavLink
+          to="/dashboard"
+          end
+        >
+          
+        </NavLink>
+      </div>
       <div className="admin-profile-side">
       <img
         src={profilePic}
         alt="Profile"
         className="adminnav-profile-img"
       />
-      <h5 className="amin-name-side">ADMIN PANAL</h5>
+      <h5 className="amin-name-side">ADMIN</h5>
       </div>
 
       <ul className="admin-sidebar-menu">

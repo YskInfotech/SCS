@@ -23,25 +23,16 @@
 
 .contact-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
   text-align: left;
   gap: 20px; 
 }
 
 
-.contact-item {
-  flex: 1 1 350px;
-  margin: 0; 
-}
-
-
-.contact-item.right {
-  margin-left: 40px; 
-}
 
 
 .contact-item-header {

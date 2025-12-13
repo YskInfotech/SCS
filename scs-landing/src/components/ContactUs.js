@@ -22,7 +22,7 @@ const ContactUs = () => {
           <p className="contact-text">
             #6-3-789, Unit No-512, 5th floor, <br />
             Pavani Prestige Comercial Complex, <br />
-             Ameerpet , Hyderabad,Telangana -500016. <br />
+             Ameerpet , Hyd,Telangana -500016. <br />
             
           </p>
 

@@ -1,4 +1,15 @@
+.about-container {
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto;
+}
 
+  html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* prevents accidental horizontal scroll from shadows/margins */
+}
 /* header section */
 
 .nav-custom-btn {
@@ -419,17 +430,35 @@ p {
   box-shadow: 0px 10px 20px rgba(0, 123, 255, 0.3);
   position: relative;
   top: 8px;   /* Move up to overlap bottom */
-  left: -10px;  /* Move left to overlap left side */
+  
 }
 
 /* Outer Card Styling */
+
+ .outer-info-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  max-width: 380px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+   margin-right: auto;
+}
+
+
 .outer-info-card {
   background-color: #ffffff;
   border-radius: 12px;
+  width: 85%;
+  max-width: 380px;
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   position: relative;
 }
+
+
+
 
 /* Green Top Bar */
 .card-top-bar {
@@ -444,7 +473,20 @@ p {
 .card-inner {
   display: flex;
   align-items: center;
+  padding: 10px 10px;
+  gap: 15px;
 }
+
+@media (max-width: 768px) {
+  .card-inner {
+    display: flex;
+    align-items: center;
+    padding: 14px 16px;     /* space from card edges */
+    gap: 14px;             /* space between image + text */
+  }
+}
+
+
 
 /* Icon/Image Styling */
 .side-icon {
@@ -540,12 +582,14 @@ h2 {
 
   .service-image-wrapper {
     width: 100%;
-    height: 180px;
+    /* height: 180px; */
     border-radius: 15px 15px 0 0; /* top only for mobile */
   }
 
   .service-image {
     border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 380px;
   }
 
   .service-content {
@@ -606,16 +650,19 @@ background-color: #FAF5F5;
 
 /* Why we choose */
 
+
 .why-choose-container {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 100px auto;
+  /* margin: 100px auto; */
   max-width: 950px;
   height: 420px;
   font-family: "Poppins", sans-serif;
 }
+
+
 
 /* Outer grey circle */
 .outer-circle {
@@ -644,11 +691,100 @@ background-color: #FAF5F5;
   z-index: 1;
 }
 
+@media(max-width:768px){
+  
+.outer-desc {
+        font-size: 15px;
+        color: #000;
+        line-height: 1.6;
+        max-width: 110px;
+        position: relative;
+        /* left: 25px; */
+        text-align: end;
+        z-index: 1;
+}
+
+.outer-circle {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 3px solid #e0e0e0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 0;
+  margin-left: 50px; /* moved slightly left */
+  text-align: center;
+  padding: 40px;
+}
+.why-circle {
+  position: absolute;
+  top: 50%;
+  left: 25px !important;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 180px;
+  background-color: #0c2d57;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+}
+
+
+/* iPad Air – 820px width */
+
+@media (max-width: 820px) and (min-width: 768px) {
+    .outer-circle {
+        width: 300px;
+        height: 300px;
+        padding: 25px; 
+        margin-left: 0; 
+    }
+
+    .outer-desc {
+  font-size: 17px;
+  color: #000;
+  line-height: 1.6;
+  position: relative;
+  left: 20px;
+  max-width: 150px;
+  text-align: center;
+  z-index: 1;
+}
+.why-circle {
+  position: absolute;
+  top: 50%;
+  left: 25px !important;
+  transform: translate(-50%, -50%);
+  width: 120px !important;
+  height: 120px !important;
+  padding: 20px;
+  background-color: #0c2d57;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+}
+
+
 /* Inner blue circle */
 .why-circle {
   position: absolute;
   top: 50%;
-  left: 0; /* slightly left to make it look visually centered */
+  left: 0; 
   transform: translate(-50%, -50%);
   width: 180px;
   height: 180px;
@@ -722,6 +858,7 @@ background-color: #FAF5F5;
   .why-choose-container {
     flex-direction: column;
     height: auto;
+    margin-bottom: 5cm  ;
   }
 
   .features {
