@@ -10,14 +10,12 @@ import Login from './components/adminlogin/Login';
 import Sources from "./components/Sources";
 
 
+
 function App() {
 
 
   return (
     <div className="App">
-
-
-
 
       <Router>
 
@@ -26,6 +24,7 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path="/dashboard*" element={<DashboardLayout />} />
           <Route path="/sources" element={<Sources />} />
+          
         </Routes>
       </Router>
     </div>
