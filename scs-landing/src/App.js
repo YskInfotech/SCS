@@ -8,6 +8,7 @@ import LandingPage from './components/LandingPage/LandingPage';
 import DashboardLayout from './components/AdminDashBoard/DashboardLayout';
 import Login from './components/adminlogin/Login';
 import Sources from "./components/Sources";
+import OnboardingFlow from "./components/EmployeeOnboarding/OnboardingFlow";
 
 
 
@@ -24,6 +25,7 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path="/dashboard*" element={<DashboardLayout />} />
           <Route path="/sources" element={<Sources />} />
+          <Route path="/onboardingemployee" element={<OnboardingFlow/>} />
           
         </Routes>
       </Router>

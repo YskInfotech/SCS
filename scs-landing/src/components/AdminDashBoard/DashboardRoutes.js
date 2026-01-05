@@ -6,12 +6,6 @@ import Onboardlanding from "../Onboarding/Onboardlanding";
 import Onboarddetails from "../Onboarding/Onboarddetails";
 
 
-
-
-
-
-
-
 function DashboardRoutes() {
   return (
     <Routes>
