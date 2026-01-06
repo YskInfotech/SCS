@@ -5,7 +5,11 @@ import DocumentsIdProofs from "./DocumentsIdProofs";
 import ExperiencedDocumentsForm from "./ExperiencedDocumentsForm";
 import NomineeBankDetails from "./NomineeBankDetails";
 import JoiningDocumentsChecklist from "./JoiningDocumentsChecklist";
-import OnboardingSuccess from "../Onboarding/OnboardingSuccess";
+import OnBoardingSuccess from "./OnBoardingSuccess";
+
+
+
+
 
 const OnboardingFlow = () => {
   const [step, setStep] = useState(1);
@@ -153,7 +157,7 @@ nominees: {
         </div>
       </div>
 
-      <OnboardingSuccess
+      <OnBoardingSuccess
         show={showSuccess}
         handleClose={handleCloseSuccess}
         name={formData?.name}

@@ -1,10 +1,9 @@
 import React from "react";
 import { Modal, Button } from "react-bootstrap";
 import companyLogo from "../../assets/logo.png";
+import "../../Styles/Adminonboarding.css";
 
-// import "../../Styles/Onboardingsuccess.css";
-
-const OnboardingSuccess = ({ show, handleClose, name }) => {
+const OnBoardingSuccess = ({ show, handleClose, name }) => {
   return (
     <Modal show={show} onHide={handleClose} centered backdrop="static">
       <div className="text-center p-4">
@@ -12,7 +11,7 @@ const OnboardingSuccess = ({ show, handleClose, name }) => {
         {/* Company Logo */}
         <img 
           src={companyLogo} 
-          alt="VIFAST Technologies" 
+          alt="SCS" 
           style={{ width: "120px", marginBottom: "20px" }}
         />
 
@@ -42,4 +41,4 @@ const OnboardingSuccess = ({ show, handleClose, name }) => {
   );
 };
 
-export default OnboardingSuccess;
+export default OnBoardingSuccess;

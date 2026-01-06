@@ -4,6 +4,7 @@ import "../App.css";
 import rajeshImg from "../assets/manager.jpg";
 import priyaImg from "../assets/HRlead.jpg";
 import arjunImg from "../assets/HotelManger.jpg";
+import NeedManpowerPopup from "./Pages/NeedManpowerPopup";
 
 const testimonials = [
   {
@@ -69,58 +70,11 @@ const Testimonials = () => {
         </div>
       </div>
 
-      {/* Slide-in Form Overlay */}
-      <div className={`popup-form-overlay ${showForm ? "show" : ""}`}>
-        <div className="popup-form">
-          <div className="popup-header">
-            <h3>Need Manpower</h3>
-            <button className="close-btn" onClick={() => setShowForm(false)}>
-              &times;
-            </button>
-          </div>
-          <form className="form-fields">
-            <div className="mb-3">
-              <label>Name</label>
-              <input type="text" className="form-control" required />
-            </div>
-            <div className="mb-3">
-              <label>Company Name</label>
-              <input type="text" className="form-control" required />
-            </div>
-            <div className="mb-3">
-              <label>Email</label>
-              <input type="email" className="form-control" required />
-            </div>
-            <div className="mb-3">
-              <label>Phone Number</label>
-              <input type="tel" className="form-control" required />
-            </div>
-            <div className="mb-3">
-              <label>Select Requirement</label>
-              <select className="form-select" required>
-                <option value="">-- Select --</option>
-                <option>Payroll services</option>
-                <option>Statutory Compliance</option>
-                <option>Staffing Solutions</option>
-                <option>IT Staffing solutions</option>
-                <option>Recruitmant Services</option>
-                <option>Training & Development Services</option>
-                <option>HR Consulting Services</option>
-                <option>Executive Search Soluations</option>
-                <option>NAPS</option>
-                <option>Others</option>
-              </select>
-            </div>
-            <div className="mb-3">
-              <label>Comments</label>
-              <textarea type="tel" className="form-control"  />
-            </div>
-            <button type="submit" className="btn btn-success w-100">
-              Submit
-            </button>
-          </form>
-        </div>
-      </div>
+        <NeedManpowerPopup
+        show={showForm}
+        onClose={() => setShowForm(false)}
+      />
+
     </>
   );
 };

@@ -1,12 +1,14 @@
-  import React from "react";
+  import React, { useState } from "react";
   import { Navbar, Nav, Container, Button } from "react-bootstrap";
   import { NavLink } from "react-router-dom";
 import {  useNavigate } from "react-router-dom";
   import logo from "../assets/logo.png";
   import "../App.css"; 
+import NeedManpowerPopup from "./Pages/NeedManpowerPopup";
 
 
   const Header = () => {
+    const [showForm, setShowForm] = useState(false);
     const navigate = useNavigate();
     const sections = [
       {
@@ -73,6 +75,7 @@ import {  useNavigate } from "react-router-dom";
     ];
 
     return (
+      <>
       <Navbar bg="white" expand="lg" fixed="top" className="shadow-sm py-2">
         <Container>
           <Navbar.Brand href="/">
@@ -175,13 +178,21 @@ import {  useNavigate } from "react-router-dom";
                onClick={() => navigate("/")}>
                 Contact Us
               </Nav.Link>
-              <Button variant="success" className="ms-3 px-3 py-1 nav-custom-btn">
+              <Button variant="success" className="ms-3 px-3 py-1 nav-custom-btn" onClick={() => setShowForm(true)}>
                 Get Manpower
               </Button>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
+       <NeedManpowerPopup
+        show={showForm}
+        onClose={() => setShowForm(false)}
+      />
+
+      
+      </>
     );
   };
 

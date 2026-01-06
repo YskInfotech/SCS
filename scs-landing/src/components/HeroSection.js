@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Carousel, Button, Container } from "react-bootstrap";
 import "../App.css"; 
 import img1 from "../assets/Group.png";
 import img2 from "../assets/scs.jpg";
 import img3 from "../assets/slide3.png";
+import NeedManpowerPopup from "./Pages/NeedManpowerPopup";
 
 const HeroSection = () => {
+  const [showForm, setShowForm] = useState(false);
   return (
+    <>
     <section className="hero-section" id="home">
       <Carousel fade interval={1000} controls={false} indicators={false}>
         
@@ -18,7 +21,7 @@ const HeroSection = () => {
               <p className="lead highlight-text mb-4">
                 Providing skilled, semi-skilled, and unskilled workforce across India.
               </p>
-              <Button variant="success" size="lg" className="custom-btn me-3">
+              <Button variant="success" size="lg" className="custom-btn me-3" onClick={() => setShowForm(true)}>
                 Get Manpower
               </Button>
               <Button variant="outline-light rounded-pill" size="lg">
@@ -39,7 +42,7 @@ const HeroSection = () => {
               <p className="lead highlight-text mb-4">
                  Technology is best  when it brings  people together.
               </p>
-              <Button variant="success" size="lg" className="custom-btn me-3">
+              <Button variant="success" size="lg" className="custom-btn me-3" onClick={() => setShowForm(true)}>
                 Get Manpower
               </Button>
               <Button variant="outline-light rounded-pill" size="lg">
@@ -62,7 +65,7 @@ const HeroSection = () => {
               <p className="lead highlight-text mb-4">
                 5 Things You May Want a Facility Management Company to Handle.
               </p>
-              <Button variant="success" size="lg" className="custom-btn me-3">
+              <Button variant="success" size="lg" className="custom-btn me-3" onClick={() => setShowForm(true)}>
                 Get Manpower
               </Button>
               <Button variant="outline-light rounded-pill" size="lg">
@@ -74,6 +77,13 @@ const HeroSection = () => {
         </Carousel.Item>
       </Carousel>
     </section>
+
+     <NeedManpowerPopup
+        show={showForm}
+        onClose={() => setShowForm(false)}
+      />
+
+    </>
   );
 };
 

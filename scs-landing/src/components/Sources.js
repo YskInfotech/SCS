@@ -1,40 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Styles/Sources.css";
-
-
+ 
+ 
 import jobFairsImg from "../assets/jobfair.png";
  import csrImg from "../assets/csr.png";
  import collegesImg from "../assets/associatecoll.png";
 import districtImg from "../assets/districtlevel.png";
  import bannerImg from "../assets/bannerImg.png";
 import Header from "./Header";
-
+import NeedManpowerPopup from "./Pages/NeedManpowerPopup";
+ 
 const Sources = () => {
+  const [showForm, setShowForm] = useState(false);
   return (
+     <>
     <div className="source">
         <Header/>
       <section className="source-hero">
         <img src={bannerImg} alt="Connecting Companies" className="source-hero-bg" />
-
+ 
         <div className="source-hero-overlay">
          
           <h1 className="source-hero-title">
             Connecting Companies with Skilled Talent to Drive Business Success
           </h1>
-        
-
+       
+ 
           <div className="source-hero-actions">
-            <button className="source-btn source-btn-primary">Get Manpower</button>
+            <button className="source-btn source-btn-primary"  onClick={() => setShowForm(true)}>Get Manpower</button>
             <button className="source-btn source-btn-outline">Join As Worker</button>
           </div>
         </div>
       </section>
-
-      
+ 
+     
       <section className="source-main container">
-        
+       
         <div className="source-left">
-        
+       
           <article id="job-fairs" className="source-card">
             <div className="source-card-content">
               <h3 className="source-card-title">Job Fairs</h3>
@@ -46,10 +49,10 @@ const Sources = () => {
               </p>
             </div>
             <div className="source-card-image-wrapper">
-               <img src={jobFairsImg} alt="Job Fairs" className="source-card-image" /> 
+               <img src={jobFairsImg} alt="Job Fairs" className="source-card-image" />
             </div>
           </article>
-
+ 
        
           <article id="csr-training" className="source-card">
             <div className="source-card-content">
@@ -62,10 +65,10 @@ const Sources = () => {
               </p>
             </div>
             <div className="source-card-image-wrapper">
-               <img src={csrImg} alt="CSR Training Programme" className="source-card-image" /> 
+               <img src={csrImg} alt="CSR Training Programme" className="source-card-image" />
             </div>
           </article>
-
+ 
        
           <article id="colleges" className="source-card">
             <div className="source-card-content">
@@ -78,10 +81,10 @@ const Sources = () => {
               </p>
             </div>
             <div className="source-card-image-wrapper">
-               <img src={collegesImg} alt="Associated Colleges" className="source-card-image" /> 
+               <img src={collegesImg} alt="Associated Colleges" className="source-card-image" />
             </div>
           </article>
-
+ 
          
           <article id="district" className="source-card">
             <div className="source-card-content">
@@ -94,14 +97,22 @@ const Sources = () => {
               </p>
             </div>
             <div className="source-card-image-wrapper">
-              <img src={districtImg} alt="District Level Work" className="source-card-image" /> 
+              <img src={districtImg} alt="District Level Work" className="source-card-image" />
             </div>
           </article>
         </div>
-
+ 
        
       </section>
     </div>
+ 
+         <NeedManpowerPopup
+        show={showForm}
+        onClose={() => setShowForm(false)}
+      />
+    
+     </>
+ 
   );
 };
 
